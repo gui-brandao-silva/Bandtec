@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula extra Algoritmo</title>
+</head>
+
+<body>
+    <h2>Extrato bancário</h2>
+    Seu nome: <input type="text" id="ipt_nome"><br><br>
+    Seu Banco: <input type="number" id="ipt_banco"><br><br>
+    Agência: <input type="number" id="ipt_agencia"><br><br>
+    Conta: <input type="number" id="ipt_conta"><br><br>
+    Dígito: <input type="number" id="ipt_digito"><br><br>
+    <button onclick="btn()">Exibir Extrato</button>
+    <div id="msg"></div>
+</body>
+
+</html>
+
+<script>
+    function btn() {
+        var nome = ipt_nome.value;
+        var banco = Number(ipt_banco.value);
+        var agencia = Number(ipt_agencia.value);
+        var conta = Number(ipt_conta.value);
+        var digito = Number(ipt_digito.value);
+        var divisao11 = conta % 11;
+        var divisao10 = divisao11 % 10;
+
+        if (nome.length >= 3) {
+
+        } else {
+            alert('Seu nome deve ter no mínimo 3 caracteres.')
+        }
+
+
+        if (agencia > 0 && agencia < 999) {
+
+        } else {
+            alert('Sua agência deve ser maior que zero e menor que 999')
+        }
+
+
+        if (conta > 0 && conta < 99999) {
+
+        } else {
+            alert('Sua conta deve ser maior que zero e menor que 99999')
+        }
+
+
+        if (digito == divisao10) {
+
+        } else {
+            alert('Seu dígito deve ser igual ao resto da divisão por 11 e depois por 10')
+        }
+    }
+
+</script>
