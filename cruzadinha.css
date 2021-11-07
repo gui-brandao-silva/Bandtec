@@ -1,0 +1,91 @@
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+    a{
+        text-decoration: none;
+    }
+    ul{
+        list-style: none;
+    }
+    body{
+        color: darkblue;
+        padding: 0;
+        margin: 0;
+        user-select: none;
+        background-color: darkblue;
+    }
+    /* .container{
+        
+    } */
+    .content{
+        margin-top: 10vh;
+        display: flex;
+        justify-content: center;
+        margin: 5vh 5vw 0 5vw;
+    }
+    table{
+        background-color: lightslategrey;
+        padding: 10px;
+        border-radius: 10px;
+        border-spacing: 0;
+    }
+    .field input{
+        width: 2vw;
+        height: 5vh;
+        border: 1.5px solid;
+        text-align: center;
+        padding: 0.1vw;
+        border-radius: 5px;
+    }
+    .field input:disabled{
+        background-color: lightblue;
+        color: #000;
+    }
+    .field input:focus{
+        outline: 0;
+    }
+    .field.none input{
+        background-color: black;
+        display: none;
+    }
+    .side-content{
+        margin-left: 5vw;
+        background-color: lightslategrey;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+        color: lightblue;
+        width: fit-content;
+        height: 500px;
+        overflow-y: scroll;
+    }
+    .btn-question{
+        padding: 3px;
+        width: 100px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 15px;
+    }
+    .btn-question:hover{
+        background-color: blue;
+        color: white;
+        transition: 0.5s;
+    }
+    .cont{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .cont img{
+        margin-top: 3vw;
+    }
+    /* #tb:hover{
+        opacity: 12,5;
+        transition: 0.3s;
+    } */
+    b{
+        color:blue;
+    }
